@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #FF5722;
+    padding: 10px 20px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: orange;
+    color: white;
+}
+.main_library {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.library_title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FF5722;
+}
+
+.library_paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.library_selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.library_option_button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #FF5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.library_option_button:hover {
+    background-color: #FF5722;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario</title>
+    <link rel="stylesheet" href="css/diccionario.css">
+</head>
+<body>
+    <header class="header">
+        <a href="menu.html" class="back-button">← Volver al Menú</a>
+    </header>
+    <section class="main_dictionary">
+        <h2 class="dictionary_title">Diccionario</h2>
+        <p class="dictionary_paragraph">Escribe el texto o usa el comando de voz y elige los idiomas para traducir.</p>
+        
+        <form action="#" class="dictionary_form" id="dictionary_form">
+            <textarea placeholder="Texto a traducir..." class="dictionary_textarea" id="text_to_translate"></textarea>
+            <button type="button" class="voice_button" id="voice_button">🎙️ Dictar Texto</button>
+            
+            <label for="source_language" class="dictionary_label">Idioma de origen:</label>
+            <select id="source_language" class="dictionary_select">
+                <option value="es">Español</option>
+                <option value="qu">Quechua</option>
+                <option value="ay">Aimara</option>
+            </select>
+            
+            <label for="target_language" class="dictionary_label">Idioma de destino:</label>
+            <select id="target_language" class="dictionary_select">
+                <option value="qu">Quechua</option>
+                <option value="es">Español</option>
+                <option value="ay">Aimara</option>
+            </select>
+
+            <input type="button" value="Traducir" class="dictionary_button" id="translate_button">
+        </form>
+        
+        <p class="dictionary_result" id="translation_result">Traducción: <span id="result_text"></span></p>
+    </section>
+
+    <script src="js/diccionario.js"></script>
+</body>
+</html>

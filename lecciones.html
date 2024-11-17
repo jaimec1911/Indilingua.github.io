@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecciones Disponibles</title>
+    <link rel="stylesheet" href="css/lecciones.css">
+</head>
+<body>
+    <header class="header">
+        <a href="menu.html" class="back-button">← Volver al Menú</a>
+        <h1>Lecciones Disponibles</h1>
+    </header>
+
+    <div class="language-selection" id="languageSelection">
+        <h2>Seleccionar Idioma</h2>
+        <button class="language-button" onclick="selectLanguage('quechua')">Quechua</button>
+        <button class="language-button" onclick="selectLanguage('aimara')">Aimara</button>
+    </div>
+
+    <button class="back-to-selection" id="backToSelection" onclick="resetSelection()">← Volver a Selección de Idioma</button>
+
+    <div class="lessons-container" id="lessonsContainer">
+        <div class="lesson-card quechua">
+            <h3>Lección 1: <br> Introducción al Quechua</h3>
+            <p>Aprende los conceptos básicos del Quechua en esta lección introductoria.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=Xf_V_NoYjC8&list=PLun6n_hruuWHG7HABqi-EhzabZLsAKQeD&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+    
+        <div class="lesson-card quechua">
+            <h3>Lección 2: <br> Vocabulario Diario</h3>
+            <p>Aprende palabras para situaciones cotidianas.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=1FiUQYohIXM&list=PLun6n_hruuWHh_Wwe7sa1ANZ4J8Ey3oyu&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+    
+        <div class="lesson-card quechua">
+            <h3>Lección 3: <br> Los Pronombres</h3>
+            <p>Aprende sobre los pronombres en Quechua.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=_eu1fZgfDgQ&list=PLun6n_hruuWF7KUZS5zwhk1m5GIs6MYDO&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+    
+        <div class="lesson-card quechua">
+            <h3>Lección 4: <br> Los Verbos</h3>
+            <p>Aprende sobre los verbos en Quechua.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=NOBOyl0eEAA&list=PLun6n_hruuWGXWFIK_yZ-_xkXKfPAeeXF&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+    
+        <div class="lesson-card quechua">
+            <h3>Lección 5: <br> Sufijos - Parte I</h3>
+            <p>Aprende sobre los sufijos en Quechua.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=KVp3qsd9o0I&list=PLun6n_hruuWEtAeXThDCNilRPCSRJgSpJ&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+
+        <div class="lesson-card quechua">
+            <h3>Lección 6: <br> Sufijos - Parte II</h3>
+            <p>Aprende sobre los sufijos en Quechua.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=7fYCmCDiO0M&list=PLun6n_hruuWH7rrK3Ajm02vrpc9KhM1UD&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+
+        <div class="lesson-card aimara">
+            <h3>Lección 1: <br> Introducción al Aimara</h3>
+            <p>Descubre las bases del idioma Aimara.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=MpvmDNO9bgc&list=PLun6n_hruuWEKqtnDgDc5BY84u_s3Okmv&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+        <div class="lesson-card aimara">
+            <h3>Lección 2: <br> Los Pronombres</h3>
+            <p>Aprende sobre los pronombres en Aimara.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=oHbIUAilLB0&list=PLun6n_hruuWEPWbj6oHajvgIDXj5Hl_0V&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+        <div class="lesson-card aimara">
+            <h3>Lección 3: <br> Los Verbos</h3>
+            <p>Aprende sobre los verbos en Aimara.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=x2I4V58mhuk&list=PLun6n_hruuWFwu1gvjYI6ZaSNxeXqtPow&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+        <div class="lesson-card aimara">
+            <h3>Lección 4: <br> Los Sufijos</h3>
+            <p>Aprende sobre los sufijos en Aimara.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=meY8I4SVI1w&list=PLun6n_hruuWEOWbldT7OHQ3nVIlKp2RD5&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+        <div class="lesson-card aimara">
+            <h3>Lección 5: <br> Conceptos Básicos - Parte I</h3>
+            <p>Descubre conceptos básicos en Aimara.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=C7rJ7NzyTeM&list=PLun6n_hruuWE5luNfU1tk68t2Rat4a1nx&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+        <div class="lesson-card aimara">
+            <h3>Lección 6: <br> Conceptos Básicos - Parte II</h3>
+            <p>Descubre conceptos básicos en Aimara.</p>
+            <a class="lesson-button" href="https://www.youtube.com/watch?v=F4C_8Ttvnvs&list=PLun6n_hruuWGB3UUJ_L5w99nasxGLzrKC&pp=gAQB" target="_blank">Ver Video</a>
+        </div>
+    </div>
+
+
+    <script src="js/lecciones.js"></script>
+</body>
+</html>

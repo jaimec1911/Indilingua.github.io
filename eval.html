@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluaciones de Lenguas Nativas</title>
+    <link rel="stylesheet" href="css/eval.css">
+</head>
+<body>
+    <header class="header">
+        <a href="menu.html" class="back-button">← Volver al Menú</a>
+    </header>
+    <section class="main_quiz">
+        <h2 class="quiz_title">Evaluaciones de Lenguas Nativas</h2>
+        <p class="quiz_paragraph">Selecciona una evaluación para comenzar.</p>
+
+        <div class="quiz_selection" id="quiz_selection">
+            <button class="quiz_option_button" onclick="startQuiz('quechua')">Evaluación de Quechua</button>
+            <button class="quiz_option_button" onclick="startQuiz('aimara')">Evaluación de Aimara</button>
+            <button class="quiz_option_button" onclick="startQuiz('shipibo')">Evaluación de Shipibo</button>
+        </div>
+
+        <div id="quiz_area" style="display: none;">
+            <div class="quiz_question" id="quiz_question"></div>
+            <div class="quiz_options" id="quiz_options"></div>
+            <button class="quiz_button" id="next_question" style="display: none;">Siguiente Pregunta</button>
+            <p class="quiz_score" id="quiz_score">Puntuación: <span id="score">0</span></p>
+            <button class="quiz_button" id="back_to_selection" style="display: none;" onclick="returnToSelection()">Volver a las Evaluaciones</button>
+        </div>
+    </section>
+
+    <script src="js/eval.js"></script>
+</body>
+</html>
